@@ -52,6 +52,8 @@ public class SignatureService {
             List<Map<String, Object>> signatureInfos = new ArrayList<>();
 
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+            // Fijar la zona horaria a Lima (-05:00, sin DST)
+            dateFormat.setTimeZone(TimeZone.getTimeZone("America/Lima"));
 
             for (PDSignature signature : signatures) {
                 Map<String, Object> signatureInfo = new HashMap<>();

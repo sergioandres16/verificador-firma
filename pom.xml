@@ -62,7 +62,7 @@
     </dependencies>
 
     <build>
-        <finalName>ValidatorService</finalName>
+        <finalName>validador-service</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
